@@ -1,0 +1,38 @@
+<html lang="en">
+<head id="contact-head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="contact-title">Contact</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body id="contact-body">
+    <h1 id="contact-h1">Contact</h1>
+    <form id="contact-form" action="./save_contact.php" method="GET">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <tr id="form-tr">
+            <td id="subscribe-tr"><label for="subscribe">Do you want to be my friend?</label></td>
+            <td id="form-subscribe">
+                <input type="radio" id="subscribe-yes" name="subscribe" value="Yes">
+                <label for="subscribe-yes">Yes</label>
+                <input type="radio" id="subscribe-no" name="subscribe" value="No">
+                <label for="subscribe-no">No</label>
+            </td>
+        </tr>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br> <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <table id="contact-menu">
+        <tr class="menu_bar">
+            <td><a href="index.html">About me</a></td>
+        </tr>
+        <tr class="menu_bar">
+            <td><a href="me.html">My Portrait</a></td>
+        </tr>
+    </table>
+</body>
+</html>
