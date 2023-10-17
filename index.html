@@ -1,29 +1,15 @@
 <html>
-    <head id="index-head">
-        <title id="name">Brandon Evins</title>
-        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <head>
+        <title>Dr. Richards Lab 8 Starter File</title>
+        <script src="lab8.js"></script>
     </head>
-    <body id="index-body">
-        <h1 id="about-me">About Me</h1>
-        <h2 id="my-name">Brandon Evins</h2>
-        <table id="links-throughout">
-            <tr class="menu_bar">
-                <td><a href="me.html">My Portrait</a></td>
-            </tr>
-            <tr class="menu_bar">
-                <td><a href="contact.html">New Contact</a></td>
-            </tr>
-        </table>
-        <p class="paragraph">My current degree plan is Computer Science with expected graduation is December 2023</p>
-        <ol>
-            <li>Web Technologies CS 4413 TTH 8:30-9:45 </li>
-            <li>User Interfaces CS 4393 TTH 16:00-17:15</li>
-            <li>Game Development CS 4423 TTH 18:00-19:15</li>
-            <li>Cyber OperationsCS 4673 Online no set time</li>
-        </ol>
-        <p class="paragraph">My ideal job is a to help people with videography or content creating</p>
-        <p class="paragraph">My hobbies include hiking and taking my dog on road trips to nearby cities</p>
-       
+    <body>
+        First Name: <input type="text" name="fname"><br>
+        Last Name: <input type="text" name="lname"><br>
+        <input type="button" id="ajaxCall" value="Use AJAX" onclick="getDataFromForm()">
+
+        <p id="responseString"></p>
+
     </body>
-    
+
 </html>
