@@ -28,6 +28,6 @@ function runAjax(fname, lname) {
   };
 
   // Send the request with the first and last names as part of the URL
-  var params = "?firstName=" + fname + "&lastName=" + lname;
+  var params = "?fname=" + encodeURIComponent(fname) + "&lname=" + encodeURIComponent(lname);
   xhr.send(params);
 }
