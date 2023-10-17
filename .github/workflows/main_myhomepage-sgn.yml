@@ -62,5 +62,5 @@ jobs:
         with:
           app-name: 'MyHomePage-sgn'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C1E7A48561E84F7184E07FDCDB27E29C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_397BB65BF8E945A7815D853FD14648BB }}
           package: .
