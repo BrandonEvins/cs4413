@@ -15,8 +15,8 @@ function runAjax(fname, lname) {
   xhttp.open("GET", url, true);
 
   xhttp.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        document.getElementById("responseString").textContent = xhr.responseText;
+    if (xhttp.readyState === 4 && xhttp.status === 200) {
+        document.getElementById("responseString").textContent = xhttp.responseText;
     }
 };
 
