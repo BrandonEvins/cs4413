@@ -14,9 +14,11 @@ function runAjax(fname, lname) {
   var url = "./ajax.php"; 
   xhttp.open("GET", url, true);
 
-  xhttp.onload = function () {
-          document.getElementById("responseString").textContent = xhttp.responseText;
-  };
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        document.getElementById("responseString").textContent = xhr.responseText;
+    }
+};
 
   xhttp.send();
 }
