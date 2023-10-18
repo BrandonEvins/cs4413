@@ -7,6 +7,7 @@ function getDataFromForm() {
   runAjax(firstName, lastName);
 }
 
+function runAjax(fname, lname) {
 var xhttp = new XMLHttpRequest();
 
     var url = "./ajax.php"; 
