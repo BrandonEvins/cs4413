@@ -14,10 +14,8 @@ function runAjax(fname, lname) {
   var url = "./ajax.php"; 
   xhttp.open("GET", url, true);
 
-  xhttp.onreadystatechange = function () {
-      if (xhttp.readyState === 4 && xhttp.status === 200) {
+  xhttp.onload = function () {
           document.getElementById("responseString").textContent = xhttp.responseText;
-      }
   };
 
   xhttp.send();
