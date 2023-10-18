@@ -10,7 +10,7 @@ function getDataFromForm() {
 function runAjax(fname, lname) {
 var xhttp = new XMLHttpRequest();
 
-    var url = "./ajax.php"; 
+    var url = "ajax.php"; 
     var fullURL = url + "?fname=" + encodeURIComponent(fname) + "&lname=" + encodeURIComponent(lname);
     xhttp.open("GET", fullURL, true);
 
