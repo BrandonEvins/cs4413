@@ -15,8 +15,9 @@ var xhttp = new XMLHttpRequest();
     xhttp.open("GET", fullURL, true);
     console.log("opened");
     xhttp.onreadystatechange = function () {
+      console.log("in 'onreadystatechange'");
         if (xhttp.readyState === 4 && xhttp.status === 200) {
-          console.log("in 'onreadystatechange'");
+          console.log("in if statement'onreadystatechange'");
             document.getElementById("responseString").textContent = xhttp.responseText;
         }
     };
