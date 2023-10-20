@@ -4,8 +4,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$db_host="myhomepage-sgn-server.mysql.database.azure.com";        //Change this
-$db_user="hzxqojlxfi";        //Change this
+$db_host="myhomepage-sgn.mysql.database.azure.com";        //Change this
+$db_user="brandonevins";        //Change this
 $db_pass="ILoveKorea1928!";        //Change this
 $db_name="z_url_set_1";     //Do not change
 
