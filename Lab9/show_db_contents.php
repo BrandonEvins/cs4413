@@ -25,7 +25,7 @@ $query="SELECT * FROM lab9 WHERE url_tld='academy' AND url_status='added';";
 $result = $db_conn->query($query);
 
 
-if( $result->num_rows  > 0 ) {
+if($result->num_rows  > 0) {
     echo $result->num_rows.' records returned<br>';
     while($row = mysqli_fetch_assoc($result)) {
         echo $row['url_domain'].".".$row['url_tld']."<br>";
