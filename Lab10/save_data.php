@@ -11,6 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         file_put_contents($file, $data, FILE_APPEND);
 
         echo "Data saved successfully.";
+
+        echo '<br><br><a href="show_data.php"><button>View Data</button></a>';
     } else {
         echo "Please provide both first and last names.";
     }
