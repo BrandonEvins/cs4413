@@ -1,5 +1,5 @@
 <?php
-$file = 'data/private_data.txt'; // Path to the same non-public directory
+$file = '../data/private_data.txt'; // Path to the same non-public directory
 
 if (file_exists($file)) {
     $fileContents = file($file); // Read file into an array
